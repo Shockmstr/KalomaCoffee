@@ -26,14 +26,14 @@ public class CoffeeEntity {
 	private String ingredients;
 	private String origin;
 	@Column(name = "coffeeimage")
-	private byte[] image;
+	private String image;
 	
 	public CoffeeEntity() {
 		// TODO Auto-generated constructor stub
 	}
 
 	public CoffeeEntity(int id, String name, double price, String description, String ingredients, String origin,
-			byte[] image) {
+			String image) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -45,7 +45,7 @@ public class CoffeeEntity {
 	}
 
 	public CoffeeEntity(String name, double price, String description, String ingredients, String origin,
-			byte[] image) {
+			String image) {
 		super();
 		this.name = name;
 		this.price = price;
